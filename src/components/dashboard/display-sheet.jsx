@@ -1,6 +1,4 @@
 import { useParams } from "react-router-dom";
-import parse from 'html-react-parser';
-import DOMPurify from 'dompurify';
 
 const componentData = {
   id: "",
@@ -19,11 +17,7 @@ console.log('componentId', componentId)
       <p className="uppercase text-2xl font-medium">{componentData.category}</p>
       <p className="text-md text-gray-400">{componentData.description}</p>
       <div className="mt-8 border rounded border-gray-300 p-4">
-        {
-            componentData.components.map((item) => (
-                parse(DOMPurify.sanitize(item))
-            ))
-        }
+        Component
       </div>
     </section>
   );
