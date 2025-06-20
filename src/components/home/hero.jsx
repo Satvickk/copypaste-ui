@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { Link } from "react-router-dom";
 import { sidebarConfig } from "../../data";
 
@@ -34,7 +34,7 @@ const Hero = () => {
         className="mt-8 group bg-black text-white px-6 py-3 text-xl font-semibold hover:shadow-lg overflow-hidden relative"
       >
         <Link
-          to={sidebarConfig[0].link + "/" + sidebarConfig[0].id}
+          to={sidebarConfig[0].link}
           className="no-underline flex justify-center items-center"
         >
           Components

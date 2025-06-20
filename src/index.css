@@ -1,1 +1,77 @@
 @import "tailwindcss";
+
+body {
+  font-family: "Mulish Variable", "Lexend Variable", sans-serif;
+}
+
+@layer base {
+  h1 {
+    @apply text-6xl font-extrabold;
+  }
+  h2 {
+    @apply text-2xl font-bold;
+  }
+  h3 {
+    @apply text-sm;
+  }
+  h4 {
+    @apply text-xs;
+  }
+  button {
+    @apply pl-4 pr-2 py-2 rounded-full flex justify-center items-center gap-4 font-bold text-black shadow;
+  }
+  button > span {
+    @apply p-2 bg-black rounded-full;
+  }
+}
+
+@layer components {
+  .icon {
+    @apply h-5 w-5;
+  }
+  .icon-sm {
+    @apply h-4 w-4;
+  }
+  .icon-box {
+    @apply p-2 rounded-lg
+  }
+  .icon-box-circle {
+    @apply p-2 rounded-full
+  }
+  .link-animation {
+    @apply hover:translate-x-1 transition-all duration-200;
+  }
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+@utility flex-start {
+  @apply flex justify-start items-center;
+}
+@utility flex-end {
+  @apply flex justify-end items-center;
+}
+@utility page-container {
+  @apply grid;
+}
+@utility page-x-padding {
+  @apply lg:px-20;
+}
+@utility section-container {
+  @apply px-3 lg:max-w-7xl mx-auto lg:px-0 my-20;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: black;
+}

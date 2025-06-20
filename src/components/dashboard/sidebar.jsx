@@ -14,7 +14,7 @@ const Sidebar = () => {
               className={({ isActive }) =>
                 `no-underline ${isActive ? "font-bold text-blue-500" : "font-light"}`
               }
-              to={`${item.link}/${item.id}`}
+              to={`${item.link}`}
             >
               {item.component}
             </NavLink>

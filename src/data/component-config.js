@@ -1,0 +1,37 @@
+import AlertComponent from "../ui/alert-component";
+import CardComponent from "../ui/card-component";
+import LoaderComponent from "../ui/loader-component";
+
+export const componentConfig = [
+  { id: "d1a9", title: "Alert", component: AlertComponent },
+  { id: "f2b3", title: "Avatar", component: "Avatar" },
+  { id: "c4e7", title: "Badge", component: "Badge" },
+  { id: "a8d1", title: "Breadcrumb", component: "Breadcrumb" },
+  { id: "e5f9", title: "Button", component: "Button" },
+  { id: "b9c6", title: "Card", component: CardComponent },
+  { id: "g7e2", title: "Carousel", component: "Carousel" },
+  { id: "h6a3", title: "Checkbox", component: "Checkbox" },
+  { id: "j4k1", title: "Dialog", component: "Dialog / Modal" },
+  { id: "q2r5", title: "Dropdown", component: "Dropdown" },
+  { id: "l5z9", title: "Footer", component: "Footer" },
+  { id: "p6x3", title: "Form", component: "Form" },
+  { id: "m8v7", title: "Header / Navbar", component: "Header / Navbar" },
+  { id: "t1b4", title: "Input", component: "Input" },
+  { id: "n4q6", title: "List", component: "List" },
+  { id: "y7d8", title: "Loading", component: LoaderComponent },
+  { id: "z2k1", title: "Pagination", component: "Pagination" },
+  { id: "r3f5", title: "Progress", component: "Progress Bar" },
+  { id: "v9m2", title: "Radio", component: "Radio Group" },
+  { id: "x6w3", title: "Select", component: "Select" },
+  { id: "s8n5", title: "Sidebar", component: "Sidebar" },
+  { id: "u1c7", title: "Skeleton", component: "Skeleton Loader" },
+  { id: "o2b6", title: "Slider", component: "Slider" },
+  { id: "i4h9", title: "Snackbar", component: "Snackbar / Toast" },
+  { id: "k5e2", title: "Stepper", component: "Stepper" },
+  { id: "w3g1", title: "Switch", component: "Switch" },
+  { id: "b7p4", title: "Table", component: "Table" },
+  { id: "e6y8", title: "Tabs", component: "Tabs" },
+  { id: "a9u2", title: "Tag", component: "Tag / Chip" },
+  { id: "d3j6", title: "Textarea", component: "Textarea" },
+  { id: "f8c9", title: "Tooltip", component: "Tooltip" },
+];
